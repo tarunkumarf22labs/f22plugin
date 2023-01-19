@@ -13,7 +13,7 @@ export default defineConfig({
       // Could also be a dictionary or array of multiple entry points
       entry: resolve(  __dirname   , "src/main.tsx"),
       name: "tolstoyf22",
-      formats: ["umd"],
+      formats: ["es"],
       // the proper extensions will be added
       fileName: "tolstoyf22",
     },
