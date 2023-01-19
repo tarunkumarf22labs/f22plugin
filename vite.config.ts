@@ -7,7 +7,6 @@ import cssInjectedByJsPlugin from "vite-plugin-css-injected-by-js";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [preact(), cssInjectedByJsPlugin()],
-
   build: {
     lib: {
       // Could also be a dictionary or array of multiple entry points

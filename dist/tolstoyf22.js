@@ -731,7 +731,7 @@ function Ke() {
           muted: !0,
           controls: !0,
           onLoadedMetadata: u
-        }), w("div", {
+        }), w("b", {}), w("div", {
           className: "overlay-thing",
           children: e ? p.map((a) => a.value ? w("button", {
             children: w("a", {
