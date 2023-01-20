@@ -651,7 +651,12 @@ postcss@^8.4.20:
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
 
-preact@^10.11.3:
+preact-lazy@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/preact-lazy/-/preact-lazy-0.0.3.tgz#c226c9f21e28dbb8dbd291193e7f90a86f5beb47"
+  integrity sha512-0/UpDxSXpSWdiOix6VJQAoe570ajiTyR5PqOmfRR1ttoZgX9KeCSOHXmThuRAq8AGYMUt/+RBudTsWUhwvZ0yA==
+
+preact@^10.11.3, preact@^10.7.1:
   version "10.11.3"
   resolved "https://registry.yarnpkg.com/preact/-/preact-10.11.3.tgz#8a7e4ba19d3992c488b0785afcc0f8aa13c78d19"
   integrity sha512-eY93IVpod/zG3uMF22Unl8h9KkrcKIRs2EGar8hwLZZDU1lkjph303V9HZBwufh2s736U6VXuhD109LYqPoffg==
@@ -682,6 +687,11 @@ semver@^6.3.0:
   resolved "https://registry.yarnpkg.com/semver/-/semver-6.3.0.tgz#ee0a64c8af5e8ceea67687b133761e1becbd1d3d"
   integrity sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==
 
+sinuous@^0.28.1:
+  version "0.28.3"
+  resolved "https://registry.yarnpkg.com/sinuous/-/sinuous-0.28.3.tgz#ad0be69474588209589d0ed4c5192304254195a3"
+  integrity sha512-leN28dat1wgrSgSb2e5oQ7lppYfrbwgYcyeM/Fwpe5yPCRnKYHJTyILOcEkTW/GX8C5tLyXJb7omnl8O9i3PYA==
+
 source-map-js@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/source-map-js/-/source-map-js-1.0.2.tgz#adbc361d9c62df380125e7f161f71c826f1e490c"
@@ -709,6 +719,16 @@ typescript@^4.9.3:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.9.4.tgz#a2a3d2756c079abda241d75f149df9d561091e78"
   integrity sha512-Uz+dTXYzxXXbsFpM86Wh3dKCxrQqUcVMxwU54orwlJjOpO3ao8L7j5lH+dWfTwgCwIuM9GQ2kvVotzYJMXTBZg==
 
+uelements@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/uelements/-/uelements-0.3.1.tgz#0abd8099047034eff18d48164963bca034b442c5"
+  integrity sha512-pe7ahpHsblY9u1Q1lx/O9b8NzaWDehcge+HFCWgshem1ZaOJfDtaWrZAh8pgC2kG55sl5fXHVh+qg2llarfrIQ==
+  dependencies:
+    preact "^10.7.1"
+    preact-lazy "^0.0.3"
+    sinuous "^0.28.1"
+    uwhen "^0.2.2"
+
 update-browserslist-db@^1.0.9:
   version "1.0.10"
   resolved "https://registry.yarnpkg.com/update-browserslist-db/-/update-browserslist-db-1.0.10.tgz#0f54b876545726f17d00cd9a2561e6dade943ff3"
@@ -723,6 +743,11 @@ util@^0.10.3:
   integrity sha512-0Pm9hTQ3se5ll1XihRic3FDIku70C+iHUdT/W926rSgHV5QgXsYbKZN8MSC3tJtSkhuROzvsQjAaFENRXr+19A==
   dependencies:
     inherits "2.0.3"
+
+uwhen@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/uwhen/-/uwhen-0.2.2.tgz#401ae2d650a34d76a72cb02427a1d22685672454"
+  integrity sha512-gMVaz2iwoJI1HqVnCwbYqbWbiL3LY4O3qcEiu2Kj/cAS7RKHbeUpNTy/OWpaX6DOpclYpvB2z0himhA4PmFv5A==
 
 vite-plugin-css-injected-by-js@^2.4.0:
   version "2.4.0"
