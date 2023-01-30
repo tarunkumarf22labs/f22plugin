@@ -1,0 +1,633 @@
+{
+  "/": {
+    "widgetPosition": "bottomRight",
+    "custom" : {
+      "x" : 0 ,
+      "y":  0 
+   } ,
+    "widgetHeader": "Hi from our CEO",
+    "widthcolor": "pink",
+    "widthsize": "8",
+    "blink": true,
+    "rounded" : true,
+    "toshowninmobile" : false,
+
+
+    "steps": [
+      {
+        "question": "Introduction",
+        "answerTime": 2,
+        "answers": [
+          {
+            "next": "SH7v0",
+            "disabled": null,
+            "text": "What is the Fiona story?",
+            "type": "",
+            "value": "",
+            "key": "jqYFs"
+          },
+          {
+            "next": "ylP0i",
+            "disabled": null,
+            "text": "What are Moissanites?",
+            "type": "",
+            "value": "",
+            "key": "jXoa-"
+          },
+          {
+            "next": "EVKKQ",
+            "disabled": null,
+            "text": "Explain Lab Grown Diamonds",
+            "type": "",
+            "value": "",
+            "key": "msssm"
+          },
+          {
+            "next": "PXJHA",
+            "disabled": null,
+            "text": "Our Best Sellers",
+            "type": "",
+            "value": "https://www.fionadiamonds.com/pages/about-us",
+            "key": "DT0o2"
+          }
+        ],
+        "stockAsset": {
+          "gifUrl": "https://videos.gotolstoy.com/public/eff85e45-47af-4375-9df9-2502e107cf4f/d7c22462-93db-407f-b6ba-f2d03f97d825/d7c22462-93db-407f-b6ba-f2d03f97d825.mp4.gif",
+          "videoUrl": "https://cdn.shopify.com/s/files/1/0595/5069/5587/t/42/assets/d7c22462-93db-407f-b6ba-f2d03f97d825.mp4?v=1672920911"
+        },
+        "key": "OiSum"
+      },
+      {
+        "question": "The Fiona Story",
+        "answerTime": 2,
+        "answers": [
+          {
+            "next": "EVKKQ",
+            "disabled": null,
+            "text": "Explain Lab Grown Diamonds",
+            "type": "",
+            "value": "",
+            "key": "XRUvM"
+          },
+          {
+            "next": "ylP0i",
+            "disabled": null,
+            "text": "What are Moissanites?",
+            "type": "",
+            "value": "",
+            "key": "PwsMX"
+          },
+          {
+            "next": "PXJHA",
+            "disabled": null,
+            "text": "Our Best Sellers",
+            "type": "",
+            "value": "",
+            "key": "q5b3o"
+          },
+          {
+            "next": "url",
+            "disabled": null,
+            "text": "About Us",
+            "type": "",
+            "value": "https://www.fionadiamonds.com/pages/about-us",
+            "key": "3L9l_"
+          }
+        ],
+        "stockAsset": {
+          "gifUrl": "https://videos.gotolstoy.com/public/eff85e45-47af-4375-9df9-2502e107cf4f/e9e999f3-acdc-425e-92d8-75b849b209c4/e9e999f3-acdc-425e-92d8-75b849b209c4.mp4.gif",
+          "videoUrl": "https://cdn.shopify.com/s/files/1/0595/5069/5587/t/42/assets/e9e999f3-acdc-425e-92d8-75b849b209c4.mp4?v=1672920991"
+        },
+        "key": "SH7v0"
+      },
+      {
+        "question": "What are Moissanites?",
+        "answerTime": 2,
+        "answers": [
+          {
+            "next": "SH7v0",
+            "disabled": null,
+            "text": "What is the Fiona story?",
+            "type": "",
+            "value": "",
+            "key": "HyZwY"
+          },
+          {
+            "next": "EVKKQ",
+            "disabled": null,
+            "text": "Explain Lab Grown Diamonds",
+            "type": "",
+            "value": "",
+            "key": "_77Nx"
+          },
+          {
+            "next": "url",
+            "disabled": null,
+            "text": "Shop Moissanite Rings",
+            "type": "",
+            "value": "https://www.fionadiamonds.com/collections/moissanite-rings",
+            "key": "A0BSw"
+          },
+          {
+            "next": "url",
+            "disabled": null,
+            "text": "Know more about Moissanites",
+            "type": "",
+            "value": "https://www.fionadiamonds.com/pages/know-about-moissanites",
+            "key": "A5Oxu"
+          }
+        ],
+        "stockAsset": {
+          "gifUrl": "https://videos.gotolstoy.com/public/eff85e45-47af-4375-9df9-2502e107cf4f/3031f5ae-04ee-4fe5-8c12-ed5de9c56ced/3031f5ae-04ee-4fe5-8c12-ed5de9c56ced.mp4.gif",
+          "videoUrl": "https://cdn.shopify.com/s/files/1/0595/5069/5587/t/42/assets/3031f5ae-04ee-4fe5-8c12-ed5de9c56ced.mp4?v=1672921119"
+        },
+        "key": "ylP0i"
+      },
+      {
+        "question": "Our Best Sellers",
+        "answerTime": 2,
+        "answers": [
+          {
+            "next": "url",
+            "disabled": null,
+            "text": "Shop Engagement Rings",
+            "type": "",
+            "value": "https://www.fionadiamonds.com/collections/lab-diamond-rings",
+            "key": "D0dvc"
+          },
+          {
+            "next": "EVKKQ",
+            "disabled": null,
+            "text": "Explain Lab Grown Diamonds",
+            "type": "",
+            "value": "",
+            "key": "4TC_4"
+          },
+          {
+            "next": "ylP0i",
+            "disabled": null,
+            "text": "What are Moissanites?",
+            "type": "",
+            "value": "",
+            "key": "aLTe0"
+          },
+          {
+            "next": "SH7v0",
+            "disabled": null,
+            "text": "What is the Fiona story?",
+            "type": "",
+            "value": "https://www.fionadiamonds.com/collections/solitaire-engagement-rings",
+            "key": "Aiw1K"
+          }
+        ],
+        "stockAsset": {
+          "gifUrl": "https://videos.gotolstoy.com/public/eff85e45-47af-4375-9df9-2502e107cf4f/c10953cc-e82b-4a07-9e9f-a6f748ff158a/c10953cc-e82b-4a07-9e9f-a6f748ff158a.mp4.gif",
+          "videoUrl": "https://cdn.shopify.com/s/files/1/0595/5069/5587/t/42/assets/c10953cc-e82b-4a07-9e9f-a6f748ff158a.mp4?v=1672921177",
+          "hasOriginal": true
+        },
+        "key": "PXJHA"
+      },
+      {
+        "question": "Buyback Policy",
+        "answerTime": 2,
+        "answers": [
+          {
+            "next": "url",
+            "disabled": null,
+            "text": "Read our Buyback Policy",
+            "type": "",
+            "value": "https://www.fionadiamonds.com/pages/return-policy",
+            "key": "U_qiO"
+          }
+        ],
+        "stockAsset": {
+          "gifUrl": "https://videos.gotolstoy.com/public/eff85e45-47af-4375-9df9-2502e107cf4f/cb62f03d-e15e-41bb-9c7e-024406c4e059/cb62f03d-e15e-41bb-9c7e-024406c4e059.mp4.gif",
+          "videoUrl": "https://cdn.shopify.com/s/files/1/0595/5069/5587/t/42/assets/cb62f03d-e15e-41bb-9c7e-024406c4e059.mp4?v=1672921227"
+        },
+        "key": "pMIGX"
+      },
+      {
+        "question": "Price Comparision",
+        "answerTime": 2,
+        "answers": [
+          {
+            "next": "url",
+            "disabled": null,
+            "text": "Shop Lab Diamond Rings ",
+            "type": "",
+            "value": "https://www.fionadiamonds.com/collections/lab-diamond-rings",
+            "key": "0t1fA"
+          }
+        ],
+        "stockAsset": {
+          "gifUrl": "https://videos.gotolstoy.com/public/eff85e45-47af-4375-9df9-2502e107cf4f/5763fee9-85df-44e0-9090-e4ecd82eb49d/5763fee9-85df-44e0-9090-e4ecd82eb49d.mp4.gif",
+          "videoUrl": "https://cdn.shopify.com/s/files/1/0595/5069/5587/t/42/assets/5763fee9-85df-44e0-9090-e4ecd82eb49d.mp4?v=1672921605"
+        },
+        "key": "YOyhP"
+      },
+      {
+        "question": "LGD",
+        "answerTime": 2,
+        "answers": [
+          {
+            "next": "YOyhP",
+            "disabled": null,
+            "text": "Price: Lab Diamonds VS Natural",
+            "type": "",
+            "value": "",
+            "key": "D04wg"
+          },
+          {
+            "next": "SH7v0",
+            "disabled": null,
+            "text": "What is the Fiona story?",
+            "type": "",
+            "value": "",
+            "key": "bbZYX"
+          },
+          {
+            "next": "pMIGX",
+            "disabled": null,
+            "text": "Our Buyback Policy",
+            "type": "",
+            "value": "",
+            "key": "K9hBJ"
+          },
+          {
+            "next": "PXJHA",
+            "disabled": null,
+            "text": "Our Best Sellers",
+            "type": "",
+            "value": "",
+            "key": "rQDff"
+          },
+          {
+            "next": "url",
+            "disabled": null,
+            "text": "Know more about Lab Diamonds",
+            "type": "",
+            "value": "https://www.fionadiamonds.com/pages/know-about-lab-grown-diamonds",
+            "key": "jxwbH"
+          }
+        ],
+        "stockAsset": {
+          "gifUrl": "https://videos.gotolstoy.com/public/eff85e45-47af-4375-9df9-2502e107cf4f/125d8066-0fd6-4537-a5ec-0b7ebe0a83c2/125d8066-0fd6-4537-a5ec-0b7ebe0a83c2.mp4.gif",
+          "videoUrl": "https://cdn.shopify.com/s/files/1/0595/5069/5587/t/42/assets/125d8066-0fd6-4537-a5ec-0b7ebe0a83c2.mp4?v=1672922654"
+        },
+        "key": "EVKKQ"
+      }
+    ],
+    "autoplay": false,
+    "widgetShape": "rectangle",
+    "verticalOrientation": true,
+    "startStep": "OiSum",
+    "featureSettings": {
+      "font-customization": {
+        "family": "Cardo",
+        "sources": {
+          "700": "http://fonts.gstatic.com/s/cardo/v19/wlpygwjKBV1pqhND-aQR82JHaTBX.ttf",
+          "italic": "http://fonts.gstatic.com/s/cardo/v19/wlpxgwjKBV1pqhv93IQ73W5OcCk.ttf",
+          "regular": "http://fonts.gstatic.com/s/cardo/v19/wlp_gwjKBV1pqiv_1oAZ2H5O.ttf"
+        }
+      },
+      "feed-buttons-customization": {
+        "borderRadius": "100",
+        "primaryColor": "#090A0B"
+      }
+    }
+  },
+  "/cart":  {
+    "widgetPosition": "bottomLeft",
+    "custom" : {
+      "x" : 0 ,
+      "y":  0 
+   }  ,
+      "widgetSize": "s",
+      "widgetHeader": "Hi",
+      "widthcolor": "pink",
+      "widthsize": "8",
+      "blink": true,
+      "rounded" : false,
+      "toshowninmobile" : true,
+      "steps": [
+        {
+          "question": "Introduction",
+          "answerTime": 2,
+          "answers": [
+            {
+              "next": "step2",
+              "disabled": null,
+              "text": "How to integrate?",
+              "type": "",
+              "value": "",
+              "key": "jqYFs"
+            },
+            {
+              "next": "step3",
+              "disabled": null,
+              "text": "How many videos ?",
+              "type": "",
+              "value": "",
+              "key": "jXoa-"
+            },
+            {
+              "next": "EVKKQ",
+              "disabled": null,
+              "text": "Can I add external links ?",
+              "type": "",
+              "value": "http://f22labs.com/",
+              "key": "msssm"
+            }
+          ],
+          "stockAsset": {
+            "gifUrl": "https://videos.gotolstoy.com/public/eff85e45-47af-4375-9df9-2502e107cf4f/d7c22462-93db-407f-b6ba-f2d03f97d825/d7c22462-93db-407f-b6ba-f2d03f97d825.mp4.gif",
+            "videoUrl": "https://f22videoplugin.s3.ap-northeast-1.amazonaws.com/f22labs.com/videos/introduction.mp4"
+          },
+          "key": "OiSum"
+        },
+        {
+          "question": "How to integrate?",
+          "answerTime": 2,
+          "answers": [
+            {
+              "next": "step4",
+              "disabled": null,
+              "text": "Will it work on my store ?",
+              "type": "",
+              "value": "",
+              "key": "XRUvM"
+            },
+            {
+              "next": "step5",
+              "disabled": null,
+              "text": "Analytics ?",
+              "type": "",
+              "value": "",
+              "key": "PwsMX"
+            }
+          ],
+          "stockAsset": {
+            "gifUrl": "https://videos.gotolstoy.com/public/eff85e45-47af-4375-9df9-2502e107cf4f/e9e999f3-acdc-425e-92d8-75b849b209c4/e9e999f3-acdc-425e-92d8-75b849b209c4.mp4.gif",
+            "videoUrl": "https://f22videoplugin.s3.ap-northeast-1.amazonaws.com/f22labs.com/videos/howtointegrate.mp4"
+          },
+          "key": "step2"
+        },
+        {
+          "question": "How many videos ?",
+          "answerTime": 2,
+          "answers": [
+            {
+              "next": "step6",
+              "disabled": null,
+              "text": "How do I add videos ?",
+              "type": "",
+              "value": "",
+              "key": "HyZwY"
+            },
+            {
+              "next": "step9",
+              "disabled": null,
+              "text": "Page based video flows? ",
+              "type": "",
+              "value": "",
+              "key": "_77Nx"
+            },
+            {
+              "next": "step7",
+              "disabled": null,
+              "text": "External Integrations ?",
+              "type": "",
+              "value": "",
+              "key": "_77Nx"
+            }
+          ],
+          "stockAsset": {
+            "gifUrl": "https://videos.gotolstoy.com/public/eff85e45-47af-4375-9df9-2502e107cf4f/3031f5ae-04ee-4fe5-8c12-ed5de9c56ced/3031f5ae-04ee-4fe5-8c12-ed5de9c56ced.mp4.gif",
+            "videoUrl": "https://f22videoplugin.s3.ap-northeast-1.amazonaws.com/f22labs.com/videos/howmanyvideos.mp4"
+          },
+          "key": "step3"
+        },
+        {
+          "question": "All Platforms",
+          "answerTime": 2,
+          "answers": [
+            {
+              "next": "step8",
+              "disabled": null,
+              "text": "Pricing ?",
+              "type": "",
+              "value": "",
+              "key": "D0dvc"
+            },
+            {
+              "next": "step3",
+              "disabled": null,
+              "text": "How many videos ?",
+              "type": "",
+              "value": "",
+              "key": "4TC_4"
+            }
+          ],
+          "stockAsset": {
+            "gifUrl": "https://videos.gotolstoy.com/public/eff85e45-47af-4375-9df9-2502e107cf4f/c10953cc-e82b-4a07-9e9f-a6f748ff158a/c10953cc-e82b-4a07-9e9f-a6f748ff158a.mp4.gif",
+            "videoUrl": "https://f22videoplugin.s3.ap-northeast-1.amazonaws.com/f22labs.com/videos/allplatforms.mp4",
+            "hasOriginal": true
+          },
+          "key": "step4"
+        },
+        {
+          "question": "Analytics",
+          "answerTime": 2,
+          "answers": [
+            {
+              "next": "step3",
+              "disabled": null,
+              "text": "How many videos ?",
+              "type": "",
+              "value": "",
+              "key": "U_qiO"
+            },
+            {
+              "next": "step4",
+              "disabled": null,
+              "text": "Will it work on my store ?",
+              "type": "",
+              "value": "",
+              "key": "U_qiO"
+            }
+          ],
+          "stockAsset": {
+            "gifUrl": "https://videos.gotolstoy.com/public/eff85e45-47af-4375-9df9-2502e107cf4f/cb62f03d-e15e-41bb-9c7e-024406c4e059/cb62f03d-e15e-41bb-9c7e-024406c4e059.mp4.gif",
+            "videoUrl": "https://f22videoplugin.s3.ap-northeast-1.amazonaws.com/f22labs.com/videos/analytics.mp4"
+          },
+          "key": "step5"
+        },
+        {
+          "question": "How to add videos?",
+          "answerTime": 2,
+          "answers": [
+            {
+              "next": "step2",
+              "disabled": null,
+              "text": "How to integrate?",
+              "type": "",
+              "value": "",
+              "key": "0t1fA"
+            },
+            {
+              "next": "step4",
+              "disabled": null,
+              "text": "Will it work on my store ?",
+              "type": "",
+              "value": "",
+              "key": "0t1fA"
+            },
+            {
+              "next": "step5",
+              "disabled": null,
+              "text": "Analytics ?",
+              "type": "",
+              "value": "",
+              "key": "0t1fA"
+            }
+          ],
+          "stockAsset": {
+            "gifUrl": "https://videos.gotolstoy.com/public/eff85e45-47af-4375-9df9-2502e107cf4f/5763fee9-85df-44e0-9090-e4ecd82eb49d/5763fee9-85df-44e0-9090-e4ecd82eb49d.mp4.gif",
+            "videoUrl": "https://f22videoplugin.s3.ap-northeast-1.amazonaws.com/f22labs.com/videos/howtoaddvideos.mp4"
+          },
+          "key": "step6"
+        },
+        {
+          "question": "External integrations ?",
+          "answerTime": 2,
+          "answers": [
+            {
+              "next": "step4",
+              "disabled": null,
+              "text": "Will it work on my store ?",
+              "type": "",
+              "value": "",
+              "key": "D04wg"
+            },
+            {
+              "next": "step5",
+              "disabled": null,
+              "text": "Analytics ?",
+              "type": "",
+              "value": "",
+              "key": "bbZYX"
+            },
+            {
+              "next": "step6",
+              "disabled": null,
+              "text": "How do I add videos ?",
+              "type": "",
+              "value": "",
+              "key": "K9hBJ"
+            }
+          ],
+          "stockAsset": {
+            "gifUrl": "https://videos.gotolstoy.com/public/eff85e45-47af-4375-9df9-2502e107cf4f/125d8066-0fd6-4537-a5ec-0b7ebe0a83c2/125d8066-0fd6-4537-a5ec-0b7ebe0a83c2.mp4.gif",
+            "videoUrl": "https://f22videoplugin.s3.ap-northeast-1.amazonaws.com/f22labs.com/videos/integrationswithothertools.mp4"
+          },
+          "key": "step7"
+        },
+        {
+          "question": "Pricing",
+          "answerTime": 2,
+          "answers": [
+            {
+              "next": "step5",
+              "disabled": null,
+              "text": "Analytics ?",
+              "type": "",
+              "value": "",
+              "key": "D04wg"
+            },
+            {
+              "next": "step3",
+              "disabled": null,
+              "text": "Limits ?",
+              "type": "",
+              "value": "",
+              "key": "bbZYX"
+            },
+            {
+              "next": "step7",
+              "disabled": null,
+              "text": "External integrations ?",
+              "type": "",
+              "value": "",
+              "key": "K9hBJ"
+            }
+          ],
+          "stockAsset": {
+            "gifUrl": "https://videos.gotolstoy.com/public/eff85e45-47af-4375-9df9-2502e107cf4f/125d8066-0fd6-4537-a5ec-0b7ebe0a83c2/125d8066-0fd6-4537-a5ec-0b7ebe0a83c2.mp4.gif",
+            "videoUrl": "https://f22videoplugin.s3.ap-northeast-1.amazonaws.com/f22labs.com/videos/pricing.mp4"
+          },
+          "key": "step8"
+        },
+        {
+          "question": "Different Flows for Different pages",
+          "answerTime": 2,
+          "answers": [
+            {
+              "next": "step4",
+              "disabled": null,
+              "text": "Will it work on my store ?",
+              "type": "",
+              "value": "",
+              "key": "D04wg"
+            },
+            {
+              "next": "step6",
+              "disabled": null,
+              "text": "How do I add videos ?",
+              "type": "",
+              "value": "",
+              "key": "bbZYX"
+            },
+            {
+              "next": "step8",
+              "disabled": null,
+              "text": "Pricing ?",
+              "type": "",
+              "value": "",
+              "key": "K9hBJ"
+            },
+            {
+              "next": "step11",
+              "disabled": null,
+              "text": "Does it integrate with other tools ?",
+              "type": "",
+              "value": "",
+              "key": "K9hBJ"
+            }
+          ],
+          "stockAsset": {
+            "gifUrl": "https://videos.gotolstoy.com/public/eff85e45-47af-4375-9df9-2502e107cf4f/125d8066-0fd6-4537-a5ec-0b7ebe0a83c2/125d8066-0fd6-4537-a5ec-0b7ebe0a83c2.mp4.gif",
+            "videoUrl": "https://f22videoplugin.s3.ap-northeast-1.amazonaws.com/f22labs.com/videos/customizeflows.mp4"
+          },
+          "key": "step9"
+        }
+      ],
+      "autoplay": false,
+      "widgetShape": "rectangle",
+      "verticalOrientation": true,
+      "startStep": "OiSum",
+      "featureSettings": {
+        "font-customization": {
+          "family": "Cardo",
+          "sources": {
+            "700": "http://fonts.gstatic.com/s/cardo/v19/wlpygwjKBV1pqhND-aQR82JHaTBX.ttf",
+            "italic": "http://fonts.gstatic.com/s/cardo/v19/wlpxgwjKBV1pqhv93IQ73W5OcCk.ttf",
+            "regular": "http://fonts.gstatic.com/s/cardo/v19/wlp_gwjKBV1pqiv_1oAZ2H5O.ttf"
+          }
+        },
+        "feed-buttons-customization": {
+          "borderRadius": "100",
+          "primaryColor": "#090A0B"
+        }
+      }
+  }
+}
