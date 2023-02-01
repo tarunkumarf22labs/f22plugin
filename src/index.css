@@ -1,7 +1,10 @@
 :root {
-  --color-border:   "" ;
-  --color-width:    "" ;
-  --color-animation:"" ;
+  --color-border:    "" ;
+  --color-width:     "" ;
+  --color-animation: "" ;
+  --width-smallbox : "";
+  --height-smallbox : "";
+  --text-color  : "";
 }
 
 * {
@@ -153,7 +156,7 @@ video {
   align-items: center;
   text-align: center;
   font-size: 15px;
-  color: white;
+  color: var(--text-color);
   font-family: sans-serif;
 }
 
@@ -270,8 +273,8 @@ video {
 .smvideo-container {
   width: fit-content;
   border-radius: 50%;
-  width: 160px;
-  height: 190px;
+  width: var(--width-smallbox);
+  height: var(--height-smallbox);
 }
 
 .smvideo-container-round {

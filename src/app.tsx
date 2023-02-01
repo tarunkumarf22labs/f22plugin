@@ -47,13 +47,26 @@ function App({ dataURL }: { dataURL: string }): JSX.Element {
       handlestoragevals(data.record);
       setdata(data.record);
       console.log("super" , kucha[0]?.count || 0);
-      
       setlocal(data.record[base][kucha[0]?.count || 0]);
+    console.log(local , "logged");
+    
     }
     data();
   }, []);
-  console.log(local);
-
+  document.documentElement.style.setProperty(
+    "--width-smallbox",
+    `${local.widthsmallbox}px`
+  );
+  document.documentElement.style.setProperty(
+    "--height-smallbox",
+    `${local.heightsmallbox}px`
+  );
+  
+  document.documentElement.style.setProperty(
+    "--text-color",
+    `${local.textcolor}`
+  );
+  
   // const [first, setfirst] = useLocalstorage("initialvideo",[]);
   //  console.log(JSON.parse(localStorage.getItem("initialvideo")!));
 
@@ -61,7 +74,7 @@ function App({ dataURL }: { dataURL: string }): JSX.Element {
 
      console.log(local);
      
-    document.documentElement.style.setProperty(
+     document.documentElement.style.setProperty(
       "--color-border",
       local.widthcolor
     );
@@ -77,6 +90,7 @@ function App({ dataURL }: { dataURL: string }): JSX.Element {
 
   const [show, SetShow] = useState<boolean>(false);
   const [video, setvideo] = useState<string>("");
+  const [gif, setgif] = useState<string>("");
   const [initialsize, setinitialsize] = useState<boolean>(false);
   const [next, setnext] = useState<string>(local?.startStep);
   const [buttons, setbutton] = useState([]);
@@ -101,9 +115,12 @@ function App({ dataURL }: { dataURL: string }): JSX.Element {
       .filter((e: any) => e)
       .filter((e: any) => {
         if (e.key === key) {
+          console.log(e.answerTime);
+          
           settimeout(e.answerTime);
           setbutton(e.answers);
           setvideo(e.stockAsset.videoUrl);
+          setgif(e.stockAsset.gifUrl)
         }
       });
   }
@@ -147,7 +164,8 @@ function App({ dataURL }: { dataURL: string }): JSX.Element {
       // transform: "",
       transform: `translate(${local?.custom?.x}px  , ${local?.custom?.y}px)`,
     };
-
+//  
+   
     switch (local?.widgetPosition) {
       case "bottomRight":
         cssval = { bottom: "10px", right: "10px", ...xp };
@@ -156,10 +174,10 @@ function App({ dataURL }: { dataURL: string }): JSX.Element {
         cssval = { bottom: "10px", left: "10px", ...xp };
         break;
       case "topRight":
-        cssval = { top: "10px", right: "10px", ...xp };
+        cssval = { top: "3px", right: "10px", ...xp };
         break;
       case "topLeft":
-        cssval = { top: "10px", left: "10px", ...xp };
+        cssval = { top: "3px", left: "10px", ...xp };
         break;
       default:
         return cssval;
@@ -195,6 +213,9 @@ function App({ dataURL }: { dataURL: string }): JSX.Element {
     getingkeys();
   }
 
+  console.log(local);
+  
+
   return (
     <div className="small-video-container-box-parent" style={cssval as any}>
       {initialsize ? (
@@ -215,7 +236,7 @@ function App({ dataURL }: { dataURL: string }): JSX.Element {
           cmpclose={cmpclose}
           data={local}
           setinitialsize={setinitialsize}
-          video={video}
+          video={gif}
           round={local?.rounded}
           onlocalchange={onlocalchange}
         />
