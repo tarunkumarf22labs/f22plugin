@@ -53,6 +53,14 @@ function App({ dataURL }: { dataURL: string }): JSX.Element {
     }
     data();
   }, []);
+
+ console.log(local.bottomcss);
+ 
+  document.documentElement.style.setProperty(
+    "--bottom-css",
+    `${local.bottomcss}px`
+  );
+
   document.documentElement.style.setProperty(
     "--width-smallbox",
     `${local.widthsmallbox}px`

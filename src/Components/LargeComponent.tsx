@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "uelements";
+import useWindowDimensions from "../hook/useWindowDimensions";
 import { LargeComponentprops } from "../types";
 
 function LargeComponent({
@@ -17,8 +18,19 @@ function LargeComponent({
     videoEl.current?.removeAttribute("controls")
 
     
-   }, [])
-  return (
+   }, []) 
+//   const { width } =   useWindowDimensions()
+
+
+
+//   let link = ""  
+//  if (width > 500) {
+//    console.log("Sahi");
+   
+//  }
+
+// https://api.whatsapp.com/send/?phone=918870981553&text=Hello%21+saw+your+plugin+on+Na[…]site.+Interested+to+know+more&type=phone_number&app_absent=0
+   return (
     <div style={cssval as any} className="video-container">
       <div className="loader-container">
         <svg
@@ -149,6 +161,9 @@ function LargeComponent({
             <div></div>
           )}
         </div>
+
+
+
         <h1
           className="lg-credit"
           style={{
@@ -157,8 +172,10 @@ function LargeComponent({
             paddingBottom: "2px",
           }}
         >
-          powered by
-          <span style={{ fontSize: "14px" }}>&nbsp; F22 Labs</span>
+
+<a href="https://api.whatsapp.com/send/?phone=918870981553&text=Hello%21+saw+your+plugin+on+Naturally+Yours+website.+Interested+to+know+more&type=phone_number&app_absent=0" target="_blank" > powered by
+          <span style={{ fontSize: "14px" }}>&nbsp; F22 Labs</span></a>
+
         </h1>
       </div>
     </div>
