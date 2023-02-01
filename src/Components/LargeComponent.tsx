@@ -174,7 +174,7 @@ function LargeComponent({
         >
 
 <a href="https://api.whatsapp.com/send/?phone=918870981553&text=Hello%21+saw+your+plugin+on+Naturally+Yours+website.+Interested+to+know+more&type=phone_number&app_absent=0" target="_blank" > powered by
-          <span style={{ fontSize: "14px" }}>&nbsp; F22 Labs</span></a>
+          <span style={{ fontSize: "14px" , margin : "0px" }}>&nbsp; F22 Labs</span></a>
 
         </h1>
       </div>

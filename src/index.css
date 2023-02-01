@@ -169,11 +169,12 @@ video {
 .lg-credit {
   color: white;
   position: absolute;
-  bottom: 0;
-  width: 100%;
+  bottom: 0 !important ;
+  width: 100% !important ;
   text-align: center;
-  font-size: 10px;
+  font-size: 10px !important ;
   font-family: sans-serif;
+  margin: 0px;
 }
 
 /* :not(:root):fullscreen {
