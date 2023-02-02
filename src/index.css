@@ -10,7 +10,10 @@
   --padding-x : "";
   --padding-y : "";
   --grid-gap : "" ;
-}
+  --f22-display : "";
+  --f22-bottom-color : "";
+  --f22-bottom-background : "";
+ }
 
 * {
   margin: 0;
@@ -72,7 +75,6 @@
 
 .overlay-thing-button {
   display: block;
-
   padding: var(--padding-y)  var(--padding-x)   ;
   border-radius: 20px;
   margin-bottom: 8px;
@@ -91,7 +93,7 @@
   width: 100%;
   padding: 20px !important;
   isolation: isolate;
-  display: grid;
+  display: var(--f22-display);
   grid-template-columns: var(--row-position);
   grid-gap: var(--grid-gap);
 }
@@ -185,10 +187,12 @@ video {
   font-size: 10px !important ;
   font-family: sans-serif;
   margin: 0px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .lg-credit a:hover{
-  background-color: #fff;
+  color: #fff;
 }
 
 /* :not(:root):fullscreen {
@@ -210,24 +214,38 @@ video {
   background-color: black;
 }
 
-.sahi {
+.mutedbutton {
   position: absolute;
   bottom: 28px;
   top: 0;
   z-index: 1;
   left: 10px;
-  width: 4rem;
-  height: 2.9rem;
+  width: fit-content;
+  height: fit-content;
   opacity: 1;
   background: transparent;
   border: none;
+  pointer-events: none;
 }
-.sahi svg {
+.mutedbutton svg {
   padding-top: 10px;
   padding-left: 5px;
-  width: 2rem;
+  width:fit-content;
+  width: 4rem;
+  height: 2.9rem;
+  /* height: 100%; */
   fill: white;
+  pointer-events: fill;
 }
+ 
+.replay{
+  left : 80px
+}
+
+.replay svg {
+  width: 3rem;
+}
+
 
 /* @media only screen and (max-width: 1440px) {
  

@@ -11,9 +11,6 @@ function App({ dataURL }: { dataURL: string }): JSX.Element {
   const [data, setdata] = useState({} as any);
   const [local, setlocal] = useState({} as any);
   const [first, setfirst] = useLocalstorage("initialvideo", []);
-    
-     
-
   function getingkeys() {
     let val = JSON.parse(localStorage.getItem("initialvideo")!);
     if (val?.length) {
@@ -98,9 +95,15 @@ function App({ dataURL }: { dataURL: string }): JSX.Element {
   );
    
   document.documentElement.style.setProperty(
-     "--grid-gap",
-    `${local.gridgap}px`
-  );
+    "--grid-gap",
+   `${local.gridgap}px`
+ );
+
+
+
+
+
+  
 
   console.log(local.gridgap);
   
@@ -152,17 +155,24 @@ function App({ dataURL }: { dataURL: string }): JSX.Element {
     }
   }
 
+ 
+  console.log(local);
+  
+
   function keypair(key = local?.startStep) {
     local?.steps
       .filter((e: any) => e)
       .filter((e: any) => {
         if (e.key === key) {
           console.log(e.answerTime);
-          
           settimeout(e.answerTime);
           setbutton(e.answers);
           setvideo(e.stockAsset.videoUrl);
           setgif(e.stockAsset.gifUrl)
+          document.documentElement.style.setProperty(
+            "--f22-display",
+           `${e.display || "block" }`
+          );
         }
       });
   }
@@ -171,9 +181,8 @@ function App({ dataURL }: { dataURL: string }): JSX.Element {
     const val = setTimeout(() => {
       if (initialsize) {
         SetShow(true);
-      }
-      // timeout 
-    }, 1 * 1000);
+      } 
+    }, timeout * 1000);
     return () => clearInterval(val);
   }, [next, initialsize, timeout]);
 
@@ -272,6 +281,7 @@ function App({ dataURL }: { dataURL: string }): JSX.Element {
           handleChange={handleChange}
           show={show}
           buttons={buttons}
+          // data = {}
         />
       ) : (
         <SmallComponent

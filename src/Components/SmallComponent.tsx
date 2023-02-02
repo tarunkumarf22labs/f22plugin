@@ -14,17 +14,9 @@ function  SmallComponent({
   const videoref = useRef<HTMLVideoElement | null>(null)
    useEffect(() => {
     videoref.current?.removeAttribute("controls")
-    console.log(videoref);
-    
+
    }, [])
      
-//   function disableVideoControls() { 
-//     var video = document.getElementById("videoPlayer") as HTMLVideoElement ;
-//       console.log(video);
-      
-//     video.removeAttribute("controls"); 
-//  };
-
 
     let cssval = "smvideo-container";
 
@@ -42,10 +34,7 @@ function  SmallComponent({
       function handleClick() {
         setinitialsize(true)
         onlocalchange()
-      }
-
-       console.log(data);
-       
+      } 
   return (
 <>  
     <>
