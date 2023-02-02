@@ -141,7 +141,7 @@ function LargeComponent({
 
         <button className="mutedbutton replay" onClick={handlereplay}>
           <svg
-            style={{ width: "2rem" }}
+            style={{ width: "32px", "display" : "inline"   }}
             viewBox="0 0 14 14"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

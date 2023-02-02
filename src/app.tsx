@@ -289,7 +289,7 @@ function App({ dataURL }: { dataURL: string }): JSX.Element {
           cmpclose={cmpclose}
           data={local}
           setinitialsize={setinitialsize}
-          video={video}
+          video={gif}
           round={local?.rounded}
           onlocalchange={onlocalchange}
         />
