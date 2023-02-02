@@ -52,11 +52,27 @@ function App({ dataURL }: { dataURL: string }): JSX.Element {
   }, []);
 
  console.log(local.bottomcss);
+
+
+
+
+//  width: 320px;
+//  height: 540px;
  
-  document.documentElement.style.setProperty(
-    "--bottom-css",
-    `${local.bottomcss}px`
-  );
+ document.documentElement.style.setProperty(
+  "--largecontainer-width",
+  `${local.largecontainerwidth}px`
+);
+
+document.documentElement.style.setProperty(
+  "--largecontainer-height",
+  `${local.largecontainerheight}px`
+);
+
+document.documentElement.style.setProperty(
+  "--bottom-css",
+  `${local.bottomcss}px`
+);
 
   document.documentElement.style.setProperty(
     "--width-smallbox",
@@ -116,7 +132,7 @@ function App({ dataURL }: { dataURL: string }): JSX.Element {
 
   setTimeout(() => {
 
-     console.log(local);
+     console.log(local.firestylechanges);
      
    document.documentElement.style.setProperty(
       "--color-border",
@@ -212,11 +228,21 @@ function App({ dataURL }: { dataURL: string }): JSX.Element {
   }
 
   function handlpositioncss() {
+     
+
+
+     
     let xp = {
-      // transform: "",
       transform: `translate(${local?.custom?.x}px  , ${local?.custom?.y}px)`,
     };
 //  
+    if (typeof local?.custom?.x === "string" ) {
+      xp = {
+        transform: `translate(${local?.custom?.x}  , ${local?.custom?.y})`,
+      };
+    }
+
+
    
     switch (local?.widgetPosition) {
       case "bottomRight":
@@ -228,9 +254,25 @@ function App({ dataURL }: { dataURL: string }): JSX.Element {
       case "topRight":
         cssval = { top: "3px", right: "10px", ...xp };
         break;
-      case "topLeft":
-        cssval = { top: "3px", left: "10px", ...xp };
-        break;
+        case "topLeft":
+          cssval = { top: "3px", left: "10px", ...xp };
+          break;
+          case "bottomcenter":
+            cssval = { bottom: "10px", left: "50%", ...xp };
+              break;
+
+              case "topcenter":
+                cssval = { top: "3px", left: "50%", ...xp };
+              break;
+
+              case "leftcenter":
+                cssval = {  left: "10px", ...xp };
+              break;
+
+              case "rightcenter":
+                cssval = { top: "3px", left: "50%", ...xp };
+              break;
+
       default:
         return cssval;
     }
@@ -269,7 +311,7 @@ function App({ dataURL }: { dataURL: string }): JSX.Element {
   
 
   return (
-    <div className="small-video-container-box-parent" style={cssval as any}>
+    <div className="small-video-container-box-parent"    style={cssval as any}>
       {initialsize ? (
         <LargeComponent
           cssval={cssval}
