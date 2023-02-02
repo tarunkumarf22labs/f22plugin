@@ -74,7 +74,40 @@ function App({ dataURL }: { dataURL: string }): JSX.Element {
     "--text-color",
     `${local.textcolor}`
   );
+   
+
+  document.documentElement.style.setProperty(
+    " --row-position",
+    `${local.rowposition}`
+  );
+   
+
+  document.documentElement.style.setProperty(
+    "--padding-x",
+    `${local.paddingx}px`
+  );
+
+  document.documentElement.style.setProperty(
+    "--padding-y",
+    `${local.paddingy}px`
+  );
+   
+  document.documentElement.style.setProperty(
+    "--row-position",
+    `${local.rowposition}`
+  );
+   
+  document.documentElement.style.setProperty(
+     "--grid-gap",
+    `${local.gridgap}px`
+  );
+
+  console.log(local.gridgap);
   
+   
+   
+
+     
   // const [first, setfirst] = useLocalstorage("initialvideo",[]);
   //  console.log(JSON.parse(localStorage.getItem("initialvideo")!));
 
@@ -82,16 +115,17 @@ function App({ dataURL }: { dataURL: string }): JSX.Element {
 
      console.log(local);
      
-     document.documentElement.style.setProperty(
+   document.documentElement.style.setProperty(
       "--color-border",
       local.widthcolor
     );
+   
     document.documentElement.style.setProperty(
       "--color-width",
       `${local.widthsize}px`
     );
-  }, 5000);
-
+  }, local.firestylechanges * 1000 );
+   
  
 
   if (Object.entries(data).length === 0) return <div></div>;
@@ -138,7 +172,8 @@ function App({ dataURL }: { dataURL: string }): JSX.Element {
       if (initialsize) {
         SetShow(true);
       }
-    }, timeout * 1000);
+      // timeout 
+    }, 1 * 1000);
     return () => clearInterval(val);
   }, [next, initialsize, timeout]);
 
@@ -244,7 +279,7 @@ function App({ dataURL }: { dataURL: string }): JSX.Element {
           cmpclose={cmpclose}
           data={local}
           setinitialsize={setinitialsize}
-          video={gif}
+          video={video}
           round={local?.rounded}
           onlocalchange={onlocalchange}
         />

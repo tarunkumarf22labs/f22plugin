@@ -14,10 +14,10 @@ define(
 );
 
 let el = document.createElement('f22-plugin')
-el.setAttribute('dataUrl', "https://api.jsonbin.io/v3/b/63da5a4fc0e7653a056bcd98")
+el.setAttribute('dataUrl', "https://api.jsonbin.io/v3/b/63d5087aebd26539d069c0ac")
 document.body.append(el)
 
-
+// https://api.jsonbin.io/v3/b/63d5087aebd26539d069c0ac
 
 // https://cdn.jsdelivr.net/gh/tarunkumarf22labs/f22plugin@tarunmobilechanges/dist/tolstoyf22.iife.js
 

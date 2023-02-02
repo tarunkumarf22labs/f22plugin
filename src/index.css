@@ -6,6 +6,10 @@
   --height-smallbox : "";
   --text-color  : "";
   --bottom-css  : "";
+  --row-position : "";
+  --padding-x : "";
+  --padding-y : "";
+  --grid-gap : "" ;
 }
 
 * {
@@ -69,7 +73,7 @@
 .overlay-thing-button {
   display: block;
 
-  padding: 5px 15px !important ;
+  padding: var(--padding-y)  var(--padding-x)   ;
   border-radius: 20px;
   margin-bottom: 8px;
   background-color: #fff;
@@ -87,6 +91,9 @@
   width: 100%;
   padding: 20px !important;
   isolation: isolate;
+  display: grid;
+  grid-template-columns: var(--row-position);
+  grid-gap: var(--grid-gap);
 }
 
 a {
@@ -94,6 +101,8 @@ a {
   text-decoration: none;
   font-size: inherit;
 }
+
+
 
 .small-video-container-box-parent {
   width: calc(150px + 18px);
@@ -160,6 +169,7 @@ video {
   font-size: 15px;
   color: var(--text-color);
   font-family: sans-serif;
+  text-shadow:1px 1px #000;
 }
 /* naturallyyours */
 .sm-video {
@@ -175,6 +185,10 @@ video {
   font-size: 10px !important ;
   font-family: sans-serif;
   margin: 0px;
+}
+
+.lg-credit a:hover{
+  background-color: #fff;
 }
 
 /* :not(:root):fullscreen {
@@ -315,3 +329,10 @@ video {
   z-index: -10;
 }
 
+
+
+.overlay-thing-button:hover {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+  transition: 0.5s ease-in-out ;
+}
