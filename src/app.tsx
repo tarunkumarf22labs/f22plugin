@@ -39,40 +39,32 @@ function App({ dataURL }: { dataURL: string }): JSX.Element {
           }
         }
       );
-      console.log(kucha);
 
       handlestoragevals(data.record);
       setdata(data.record);
-      console.log("super" , kucha[0]?.count || 0);
+
       setlocal(data.record[base][kucha[0]?.count || 0]);
-    console.log(local , "logged");
-    
     }
     data();
   }, []);
 
- console.log(local.bottomcss);
+  //  width: 320px;
+  //  height: 540px;
 
+  document.documentElement.style.setProperty(
+    "--largecontainer-width",
+    `${local.largecontainerwidth}px`
+  );
 
+  document.documentElement.style.setProperty(
+    "--largecontainer-height",
+    `${local.largecontainerheight}px`
+  );
 
-
-//  width: 320px;
-//  height: 540px;
- 
- document.documentElement.style.setProperty(
-  "--largecontainer-width",
-  `${local.largecontainerwidth}px`
-);
-
-document.documentElement.style.setProperty(
-  "--largecontainer-height",
-  `${local.largecontainerheight}px`
-);
-
-document.documentElement.style.setProperty(
-  "--bottom-css",
-  `${local.bottomcss}px`
-);
+  document.documentElement.style.setProperty(
+    "--bottom-css",
+    `${local.bottomcss}px`
+  );
 
   document.documentElement.style.setProperty(
     "--width-smallbox",
@@ -82,18 +74,16 @@ document.documentElement.style.setProperty(
     "--height-smallbox",
     `${local.heightsmallbox}px`
   );
-  
+
   document.documentElement.style.setProperty(
     "--text-color",
     `${local.textcolor}`
   );
-   
 
   document.documentElement.style.setProperty(
     " --row-position",
     `${local.rowposition}`
   );
-   
 
   document.documentElement.style.setProperty(
     "--padding-x",
@@ -104,48 +94,29 @@ document.documentElement.style.setProperty(
     "--padding-y",
     `${local.paddingy}px`
   );
-   
+
   document.documentElement.style.setProperty(
     "--row-position",
     `${local.rowposition}`
   );
-   
+
   document.documentElement.style.setProperty(
     "--grid-gap",
-   `${local.gridgap}px`
- );
-
-
-
-
+    `${local.gridgap}px`
+  );
 
   
-
-  console.log(local.gridgap);
-  
-   
-   
-
-     
-  // const [first, setfirst] = useLocalstorage("initialvideo",[]);
-  //  console.log(JSON.parse(localStorage.getItem("initialvideo")!));
-
   setTimeout(() => {
-
-     console.log(local.firestylechanges);
-     
-   document.documentElement.style.setProperty(
+    document.documentElement.style.setProperty(
       "--color-border",
       local.widthcolor
     );
-   
+
     document.documentElement.style.setProperty(
       "--color-width",
       `${local.widthsize}px`
     );
-  }, local.firestylechanges * 1000 );
-   
- 
+  }, local.firestylechanges * 1000);
 
   if (Object.entries(data).length === 0) return <div></div>;
 
@@ -171,23 +142,18 @@ document.documentElement.style.setProperty(
     }
   }
 
- 
-  console.log(local);
-  
-
   function keypair(key = local?.startStep) {
     local?.steps
       .filter((e: any) => e)
       .filter((e: any) => {
         if (e.key === key) {
-          console.log(e.answerTime);
           settimeout(e.answerTime);
           setbutton(e.answers);
           setvideo(e.stockAsset.videoUrl);
-          setgif(e.stockAsset.gifUrl)
+          setgif(e.stockAsset.gifUrl);
           document.documentElement.style.setProperty(
             "--f22-display",
-           `${e.display || "block" }`
+            `${e.display || "block"}`
           );
         }
       });
@@ -197,7 +163,7 @@ document.documentElement.style.setProperty(
     const val = setTimeout(() => {
       if (initialsize) {
         SetShow(true);
-      } 
+      }
     }, timeout * 1000);
     return () => clearInterval(val);
   }, [next, initialsize, timeout]);
@@ -228,22 +194,16 @@ document.documentElement.style.setProperty(
   }
 
   function handlpositioncss() {
-     
-
-
-     
     let xp = {
       transform: `translate(${local?.custom?.x}px  , ${local?.custom?.y}px)`,
     };
-//  
-    if (typeof local?.custom?.x === "string" ) {
+    //
+    if (typeof local?.custom?.x === "string") {
       xp = {
         transform: `translate(${local?.custom?.x}  , ${local?.custom?.y})`,
       };
     }
 
-
-   
     switch (local?.widgetPosition) {
       case "bottomRight":
         cssval = { bottom: "10px", right: "10px", ...xp };
@@ -254,24 +214,24 @@ document.documentElement.style.setProperty(
       case "topRight":
         cssval = { top: "3px", right: "10px", ...xp };
         break;
-        case "topLeft":
-          cssval = { top: "3px", left: "10px", ...xp };
-          break;
-          case "bottomcenter":
-            cssval = { bottom: "10px", left: "50%", ...xp };
-              break;
+      case "topLeft":
+        cssval = { top: "3px", left: "10px", ...xp };
+        break;
+      case "bottomcenter":
+        cssval = { bottom: "10px", left: "50%", ...xp };
+        break;
 
-              case "topcenter":
-                cssval = { top: "3px", left: "50%", ...xp };
-              break;
+      case "topcenter":
+        cssval = { top: "3px", left: "50%", ...xp };
+        break;
 
-              case "leftcenter":
-                cssval = {  left: "10px", ...xp };
-              break;
+      case "leftcenter":
+        cssval = { left: "10px", ...xp };
+        break;
 
-              case "rightcenter":
-                cssval = { top: "3px", left: "50%", ...xp };
-              break;
+      case "rightcenter":
+        cssval = { top: "3px", left: "50%", ...xp };
+        break;
 
       default:
         return cssval;
@@ -302,16 +262,12 @@ document.documentElement.style.setProperty(
 
       return sai;
     });
-    console.log("opiop");
 
     getingkeys();
   }
 
-  console.log(local);
-  
-
   return (
-    <div className="small-video-container-box-parent"    style={cssval as any}>
+    <div className="small-video-container-box-parent" style={cssval as any}>
       {initialsize ? (
         <LargeComponent
           cssval={cssval}
